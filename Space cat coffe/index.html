@@ -1,55 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Conheça o Space Cat Coffee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça o Space Cat Coffee</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ede7f6, #d1c4e9);
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* MENU */
+        #menu {
+            margin-bottom: 20px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #6a1b9a;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        #menu a:hover {
+            color: #ce93d8;
+        }
+
+        h1 {
+            color: #4a148c;
+            margin-bottom: 20px;
+        }
+
+        p {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 70%;
+            border-radius: 12px;
+            line-height: 1.6;
+            color: #333;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* BOTÕES */
+        .botoes button {
+            background-color: #8e24aa;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .botoes button:hover {
+            background-color: #ce93d8;
+        }
+
+        /* IMAGEM */
+        #imagemPrincipal {
+            width: 300px;
+            max-width: 90%;
+            margin-top: 20px;
+            border-radius: 12px;
+            border: 3px solid #8e24aa;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        #imagemPrincipal:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
-<body style="margin:0; font-family:Arial; background:#f5f5f5;">
-
-<div id="container" style="width:80%; margin:auto; background:white; padding:20px;">
+<body>
 
     <!-- MENU -->
-    <div class="menu" style="text-align:center; background:#333; padding:10px;">
-        <a href="index.html" style="color:white; margin:0 10px; text-decoration:none;">Início</a>
-        <a href="sobre.html" style="color:white; margin:0 10px; text-decoration:none;">Sobre</a>
-        <a href="contato.html" style="color:white; margin:0 10px; text-decoration:none;">Contato</a>
+    <div id="menu">
+        <a href="index.html">Início</a> |
+        <a href="sobre.html">Sobre</a> |
+        <a href="contato.html">Contato</a>
     </div>
 
-    <!-- TÍTULO -->
-    <h1 style="text-align:center; margin-top:20px;">Conheça o Space Cat Coffee</h1>
+    <h1>Conheça o incrível Space Cat Coffee</h1>
 
-    <!-- SUBTÍTULO -->
-    <h2 style="margin-top:20px;">Um café diferente em Curitiba</h2>
-    <p style="line-height:1.5;">
-        Localizado no bairro Batel, em Curitiba, o Space Cat Coffee tem chamado a atenção por unir duas paixões: café e gatos.
+    <p>
+        Localizado no bairro Batel, em Curitiba, o Space Cat Coffee tem chamado a atenção de moradores e visitantes ao unir duas paixões: café e gatos. 
+        Com uma proposta diferenciada, o espaço aposta em uma decoração temática repleta de referências felinas, criando um ambiente acolhedor e convidativo.
+        <br><br>
+        Além da experiência gastronômica, o local oferece aos clientes a oportunidade de interagir com gatos em um espaço reservado, permitindo momentos de carinho e conexão com os animais.
     </p>
 
-    <!-- SUBTÍTULO -->
-    <h2 style="margin-top:20px;">Ambiente temático e acolhedor</h2>
-    <p style="line-height:1.5;">
-        O espaço possui uma decoração temática cheia de referências felinas, criando um ambiente confortável e convidativo para os visitantes.
-    </p>
-
-    <!-- SUBTÍTULO -->
-    <h2 style="margin-top:20px;">Interação com gatos</h2>
-    <p style="line-height:1.5;">
-        Além do café, os clientes podem interagir com gatos em um espaço reservado, proporcionando momentos de carinho e conexão com os animais.
-    </p>
-
-    <!-- IMAGENS -->
-    <div class="imagens" style="text-align:center; margin-top:20px;">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweq6-y7S-RXXOOyjmGjExRM3jkfA23mB2DrOp9qhZ2lVjn5aLmhHK_XaXfK_elHhcpmMPH3OPPe2Qao3bBYcVJ_UFAQOJPqXcFUrnzYE3NPAjjSs3DC9GkXo5WCYaJeMT6xk1J-w=w289-h312-n-k-no" 
-        style="width:250px; margin:10px; border-radius:10px;">
-
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqYoUnS1JMp3h2cIotOFYaIRYQBNG_XgqJTqJEfERhUsl8dB04rMAbwgJfQYLTLuBGMHrS6Awi2tpTHmaoSzbbtjB0eXWavwhq-hBFNKcHDlNxXU5vO-Jm8hUlWy5Imqx7MfJnCSw=s1360-w1360-h1020-rw" 
-        style="width:300px; margin:10px; border-radius:10px;">
-        <br>
-        <img src="imgs/reizinho.jpeg" style="width:250px; margin:10px; border-radius:10px;">
+    <!-- BOTÕES -->
+    <div class="botoes">
+        <button onclick="trocarImagem(1)">🐱 Local</button>
+        <button onclick="trocarImagem(2)">🐱 Pedido</button>
+        <button onclick="trocarImagem(3)">🐱 Gatinho adotado</button>
     </div>
 
-</div>
+    <!-- IMAGEM -->
+    <img id="imagemPrincipal"
+
+    <!-- SCRIPT -->
+
+    <script>
+function trocarImagem(num) {
+    const img = document.getElementById("imagemPrincipal");
+
+    if (num === 1) {
+        // Local
+        img.src = "https://lh3.googleusercontent.com/gps-cs-s/AHVAweq6-y7S-RXXOOyjmGjExRM3jkfA23mB2DrOp9qhZ2lVjn5aLmhHK_XaXfK_elHhcpmMPH3OPPe2Qao3bBYcVJ_UFAQOJPqXcFUrnzYE3NPAjjSs3DC9GkXo5WCYaJeMT6xk1J-w=w289-h312-n-k-no";
+    } else if (num === 2) {
+        // Pedido
+        img.src = "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqYoUnS1JMp3h2cIotOFYaIRYQBNG_XgqJTqJEfERhUsl8dB04rMAbwgJfQYLTLuBGMHrS6Awi2tpTHmaoSzbbtjB0eXWavwhq-hBFNKcHDlNxXU5vO-Jm8hUlWy5Imqx7MfJnCSw=s1360-w1360-h1020-rw";
+    } else if (num === 3) {
+        // Seu gatinho local
+        img.src = "imgs/reizinho.jpeg";
+    }
+}
+</script>
 
 </body>
 </html>
