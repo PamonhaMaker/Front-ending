@@ -1,140 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Contato - Space Cat Coffee</title>
-
-    <!-- CSS INTERNO -->
-    <style>
-        /* Seletor Universal */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
-
-        /* ID */
-        #container {
-            width: 80%;
-            margin: auto;
-            background-color: white;
-            padding: 20px;
-        }
-
-        /* Classe */
-        .menu {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .menu a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .menu a:hover {
-            color: #ffcc00;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            margin-top: 20px;
-            color: #333;
-        }
-
-        p {
-            margin: 10px 0;
-            line-height: 1.5;
-        }
-
-        /* Seletor encadeado */
-        .contato form input,
-        .contato form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-        }
-
-        .contato form input[type="submit"] {
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .contato form input[type="submit"]:hover {
-            background-color: #555;
-        }
-
-        .imagem {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .imagem img {
-            width: 300px;
-            border-radius: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conheça o Space Cat Coffee</title>
 </head>
 
-<body>
+<body style="margin:0; background:linear-gradient(to right,#f5f5f5,#e0e0e0);">
 
-<div id="container">
+<div id="container" style="width:80%; margin:20px auto; background:white; padding:25px; border:2px solid #ccc; border-radius:10px;">
 
     <!-- MENU -->
-    <div class="menu">
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
+    <div class="menu" style="text-align:center; background:#222; padding:15px; border-radius:8px;">
+        <a href="index.html" style="color:white; margin:0 15px; text-decoration:none; font-family:Verdana; font-size:18px;">Início</a>
+        <a href="sobre.html" style="color:#00ffcc; margin:0 15px; text-decoration:underline; font-family:Georgia; font-size:16px;">Sobre</a>
+        <a href="contato.html" style="color:#ffcc00; margin:0 15px; text-decoration:none; font-family:'Courier New'; font-size:17px;">Contato</a>
     </div>
 
     <!-- TÍTULO -->
-    <h1>Contato - Space Cat Coffee</h1>
+    <h1 style="text-align:center; margin-top:25px; font-family:Impact; font-size:40px; color:#333; border-bottom:3px solid #333; padding-bottom:10px;">
+        Conheça o Space Cat Coffee
+    </h1>
 
-    <!-- IMAGEM -->
-    <div class="imagem">
-        <img src="data:image/jpeg;base64,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" alt="Space Cat Coffee">
+    <!-- SUBTÍTULO -->
+    <h2 style="margin-top:20px; font-family:Georgia; color:#444;">Um café diferente em Curitiba</h2>
+    <p style="line-height:1.6; font-family:Arial; font-size:16px; margin-bottom:10px;">
+        Localizado no bairro Batel, em Curitiba, o Space Cat Coffee une duas paixões: café e gatos.
+    </p>
+
+    <!-- SUBTÍTULO -->
+    <h2 style="margin-top:20px; font-family:'Courier New'; color:#555;">Ambiente temático</h2>
+    <p style="line-height:1.8; font-family:Tahoma; font-size:15px; margin-bottom:10px; padding:10px; border-left:4px solid #333;">
+        O espaço possui uma decoração cheia de referências felinas, criando um ambiente aconchegante.
+    </p>
+
+    <!-- SUBTÍTULO -->
+    <h2 style="margin-top:20px; font-family:Verdana; color:#666;">Interação com gatos</h2>
+    <p style="line-height:1.5; font-family:'Times New Roman'; font-size:17px; margin-bottom:15px; padding:10px; border:1px dashed #999;">
+        Os visitantes podem interagir com gatos em um espaço reservado, proporcionando momentos únicos.
+    </p>
+
+    <!-- IMAGENS -->
+    <div class="imagens" style="text-align:center; margin-top:20px;">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweq6-y7S-RXXOOyjmGjExRM3jkfA23mB2DrOp9qhZ2lVjn5aLmhHK_XaXfK_elHhcpmMPH3OPPe2Qao3bBYcVJ_UFAQOJPqXcFUrnzYE3NPAjjSs3DC9GkXo5WCYaJeMT6xk1J-w=w289-h312-n-k-no"
+        style="width:250px; margin:10px; border-radius:10px; border:3px solid #333; padding:5px;">
+
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqYoUnS1JMp3h2cIotOFYaIRYQBNG_XgqJTqJEfERhUsl8dB04rMAbwgJfQYLTLuBGMHrS6Awi2tpTHmaoSzbbtjB0eXWavwhq-hBFNKcHDlNxXU5vO-Jm8hUlWy5Imqx7MfJnCSw=s1360-w1360-h1020-rw"
+        style="width:300px; margin:10px; border-radius:50%; border:4px double #666;">
+
+        <br>
+
+        <img src="imgs/reizinho.jpeg"
+        style="width:250px; margin:15px; border-radius:20px; border:2px dotted #000; padding:8px;">
     </div>
 
-    <!-- TEXTO -->
-    <h2>Entre em contato</h2>
-    <p>Se você deseja saber mais sobre o Space Cat Coffee ou fazer uma visita, entre em contato conosco através do formulário abaixo.</p>
-
-    <!-- FORMULÁRIO -->
-    <div class="contato">
-        <form>
-            <label>Nome:</label>
-            <input type="text" name="nome" required>
-
-            <label>Email:</label>
-            <input type="email" name="email" required>
-
-            <label>Mensagem:</label>
-            <textarea rows="5" required></textarea>
-
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
-
-    <!-- INFORMAÇÕES -->
-    <h2>Informações</h2>
-    <p><strong>Endereço:</strong> Bairro Batel, Curitiba - PR</p>
-    <p><strong>Telefone:</strong> (41) 99999-9999</p>
-    <p><strong>Email:</strong> contato@spacecatcoffee.com</p>
+    <!-- RODAPÉ -->
+    <p style="text-align:center; margin-top:20px; font-size:14px; font-family:Arial; color:#777;">
+        © 2026 Space Cat Coffee - Todos os direitos reservados para Diniz enterprises
+    </p>
 
 </div>
 
