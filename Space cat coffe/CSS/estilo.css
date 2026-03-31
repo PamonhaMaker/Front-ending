@@ -1,81 +1,92 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
 }
 
-/* Fundo da página */
-body {
-    background: linear-gradient(135deg, #ede7f6, #d1c4e9);
+body{
+    background:linear-gradient(135deg,#ede7f6,#d1c4e9);
 }
 
-/* Container principal */
-.container {
-    width: 80%;
-    margin: 40px auto;
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+/* Container */
+.container{
+    width:80%;
+    margin:40px auto;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    border:2px solid #ccc;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Menu */
-#menu {
-    text-align: center;
-    margin-bottom: 25px;
+/* MENU */
+#menu{
+    text-align:center;
+    margin-bottom:25px;
 }
 
-#menu a {
-    text-decoration: none;
-    color: #6a1b9a;
-    font-weight: bold;
-    margin: 0 10px;
-    transition: 0.3s;
+#menu a{
+    margin:0 10px;
+    font-weight:bold;
+    font-size:18px;
+    text-decoration:none;
 }
 
-#menu a:hover {
-    color: #ce93d8;
+/* VARIAÇÃO LINKS */
+#menu a:nth-child(1){color:#6a1b9a;}
+#menu a:nth-child(2){color:#00897b; text-decoration:underline;}
+#menu a:nth-child(3){color:#ef6c00; font-family:'Courier New';}
+
+#menu a:hover{opacity:0.7;}
+
+/* TÍTULO */
+h1{
+    text-align:center;
+    color:#4a148c;
+    margin-bottom:20px;
+    font-family:Impact;
 }
 
-/* Título principal */
-h1 {
-    text-align: center;
-    color: #4a148c;
-    margin-bottom: 20px;
+/* SUBTÍTULOS */
+h2{
+    margin-top:20px;
+    color:#6a1b9a;
+    font-family:Georgia;
 }
 
-/* Subtítulos */
-h2 {
-    color: #6a1b9a;
-    margin-top: 20px;
+/* PARÁGRAFOS */
+p{
+    margin-top:10px;
+    line-height:1.6;
+    font-size:16px;
 }
 
-/* Parágrafos */
-p {
-    margin-top: 10px;
-    line-height: 1.6;
-    color: #333;
+/* VARIAÇÃO */
+.info{
+    text-align:center;
+    font-size:14px;
+    color:#777;
 }
 
-/* Caixa destaque */
-.destaque {
-    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
-    padding: 15px;
-    border-left: 5px solid #8e24aa;
-    border-radius: 10px;
+.destaque{
+    background:linear-gradient(135deg,#f3e5f5,#e1bee7);
+    padding:15px;
+    border-left:5px solid #8e24aa;
+    border-radius:10px;
+    font-family:'Times New Roman';
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 30px;
-    color: #7b1fa2;
-    font-size: 14px;
+/* FOOTER */
+footer{
+    text-align:center;
+    margin-top:30px;
+    font-size:14px;
+    color:#7b1fa2;
 }
 
-/* Efeito leve ao passar o mouse no container */
-.container:hover {
-    transform: scale(1.01);
-    transition: 0.3s;
+/* EFEITO */
+.container:hover{
+    transform:scale(1.01);
+    transition:0.3s;
 }
